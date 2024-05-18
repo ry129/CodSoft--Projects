@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Pilo Guyz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/icon.png" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="./images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">WHAT'S NEW</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just coffee<br />It's <span>SUKOON</span></h2>
+          <p>
+            COFFEE PILO GUYZ Welcomes you.A sip of coffee, solace for the
+            heart.<br />"कॉफ़ी के दीवाने, चाय से अनजाने, हर दर्द को भूल जाते,
+            मिलते सच्चे अपने।"<br />Jab aap yhan tak phuch hi gye h toh coffee
+            bhi order krke hi jaayiega.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="./images/img1.png" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="./images/thumb1.png"
+            onclick="imgSlider('./images/img1.png');changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/thumb2.png"
+            onclick="imgSlider('./images/img2.png');changeCircleColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/thumb3.png"
+            onclick="imgSlider('./images/img3.png');changeCircleColor('#d752b1')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="./images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/instagram.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/twitter.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
